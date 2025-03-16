@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def f(j, x, a = 1, b = 2, c = 3, d = 4): 
+def f(j, x, a = 1.0, b = 1.0, c = 1.0, d = 1.0): 
     if j == 0:
         return np.sin(x)
     elif j == 1:
@@ -11,7 +11,7 @@ def f(j, x, a = 1, b = 2, c = 3, d = 4):
     elif j == 3:
         return a*x**3 + b*x**2 + c*x + d
 
-def df(j, x, a = 1, b = 2, c = 3, d = 4):
+def df(j, x, a = 1.0, b = 1.0, c = 1.0, d = 1.0):
     if j == 0:
         return np.cos(x)
     elif j == 1:
@@ -21,7 +21,7 @@ def df(j, x, a = 1, b = 2, c = 3, d = 4):
     elif j == 3:
         return 3*a*x**2 + 2*b*x + c
 
-def d2f(j, x, a = 1, b = 2, c = 3, d = 4):
+def d2f(j, x, a = 1.0, b = 1.0, c = 1.0, d = 1.0):
     if j == 0:
         return -np.sin(x)
     elif j == 1:
@@ -37,10 +37,10 @@ df_values = np.zeros((len(grid), 2))
 d2f_values = np.zeros((len(grid), 2))
 df_real = np.zeros(len(grid))
 d2f_real = np.zeros(len(grid))
-df_error = np.zeros(2) 
-d2f_error = np.zeros(2)
 
 for j in range (0, 4):
+    df_error = np.zeros(2) 
+    d2f_error = np.zeros(2)
     for i in range (0, len(grid)): 
         f_values[i] = f(j, grid[i])
         df_real[i] = df(j, grid[i])
