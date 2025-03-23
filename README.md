@@ -9,7 +9,7 @@ Then, I created a frame of my code. The calculating method may be wrong, but it 
 # 代码运行指南
 本次作业涉及的代码包括'homework.py'和'homework-question4.py'两个文件，使用的语言是python，运行时需要使用numpy软件包。运行'homework.py'文件可以得到作业第二问、第三问的结果；运行'homework-question4.py'文件可得到作业第四问的结果。
 
-请注意，代码输出结果中的method1~method4对应报告中的公式（1）~（4）
+请注意，代码输出结果中的method1-method4对应报告中的公式（1）-（4）
 
 数值验证格式精度时，我将格点数减少了一倍，也就是取q=2（近似），用事后验证的公式即可得到数值精度。具体见'homework.py'文件中question2部分，可以看出，一阶微分的第一种格式，数值精度为四阶，一阶微分的第二种格式和二阶微分的两种格式，数值精度均为二阶；
 
