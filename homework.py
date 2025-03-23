@@ -113,6 +113,8 @@ print('method 4:',d2f_accuracy[1])
 #question 3.1 investigate the properties of the rounding error
 
 print('question 3.1')
+
+#linear function
 function1_values = function1(grid)
 dfunction1_real = np.zeros(len(grid))
 d2function1_real = np.zeros(len(grid))
@@ -141,6 +143,7 @@ print('rounding error of the second order derivative: linear function')
 print('method 3:',d2function1_error[0])
 print('method 4:',d2function1_error[1])
 
+#quadratic function
 function2_values = function2(grid)
 dfunction2_real = np.zeros(len(grid))
 d2function2_real = np.zeros(len(grid))
@@ -169,6 +172,7 @@ print('rounding error of the second order derivative: quadratic function')
 print('method 3:',d2function2_error[0])
 print('method 4:',d2function2_error[1])
 
+#cubic function
 function3_values = function3(grid)
 dfunction3_real = np.zeros(len(grid))
 d2function3_real = np.zeros(len(grid))
@@ -197,6 +201,7 @@ print('error of the second order derivative: cubic function')
 print('method 3:',d2function3_error[0])
 print('method 4:',d2function3_error[1])
 
+#quartic function
 function4_values = function4(grid)
 dfunction4_real = np.zeros(len(grid))
 d2function4_real = np.zeros(len(grid))
@@ -229,6 +234,8 @@ print('method 4:',d2function4_error[1])
 #question 3.2 investigate the properties of the truncation error
 
 print('question 3.2')
+
+#using the result of question 2
 print('numerical error of the first order derivative: trigonometric function')
 print('method 1:',df_error[0])
 print('method 2:',df_error[1])
