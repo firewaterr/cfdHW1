@@ -67,6 +67,7 @@ for i in range(2):
     d2f_error_float64[i] = np.sqrt(d2f_error_float64[i])
 
 # Output the results
+print('question 4:')
 print('numerical error of the first order derivative (float32):')
 print('method 1:', df_error_float32[0])
 print('method 2:', df_error_float32[1])

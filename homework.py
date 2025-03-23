@@ -34,6 +34,8 @@ def d2function4(x):#second order derivative of x^4+3x^3+5x^2+7x+9
 
 
 #question 2 calculate the numerical accuracy of the first and second order derivative
+print('question 2')
+
 #grid initialization
 grid = np.linspace(0, 10 * np.pi, 5004)
 grid_2 = np.linspace(0, 10 * np.pi, 10004)
@@ -110,6 +112,7 @@ print('method 4:',d2f_accuracy[1])
 
 #question 3.1 investigate the properties of the rounding error
 
+print('question 3.1')
 function1_values = function1(grid)
 dfunction1_real = np.zeros(len(grid))
 d2function1_real = np.zeros(len(grid))
@@ -131,10 +134,10 @@ for i in range(2, len(grid)-2):
 for i in range (0, 2):
     dfunction1_error[i] = np.sqrt(dfunction1_error[i])
     d2function1_error[i] = np.sqrt(d2function1_error[i])
-print('rounding error of the first order derivative:')
+print('rounding error of the first order derivative: linear function')
 print('method 1:',dfunction1_error[0])
 print('method 2:',dfunction1_error[1])
-print('rounding error of the second order derivative:')
+print('rounding error of the second order derivative: linear function')
 print('method 3:',d2function1_error[0])
 print('method 4:',d2function1_error[1])
 
@@ -159,10 +162,10 @@ for i in range(2, len(grid)-2):
 for i in range (0, 2):
     dfunction2_error[i] = np.sqrt(dfunction2_error[i])
     d2function2_error[i] = np.sqrt(d2function2_error[i])
-print('rounding error of the first order derivative:')
+print('rounding error of the first order derivative: quadratic function')
 print('method 1:',dfunction2_error[0])
 print('method 2:',dfunction2_error[1])
-print('rounding error of the second order derivative:')
+print('rounding error of the second order derivative: quadratic function')
 print('method 3:',d2function2_error[0])
 print('method 4:',d2function2_error[1])
 
@@ -187,10 +190,10 @@ for i in range(2, len(grid)-2):
 for i in range (0, 2):
     dfunction3_error[i] = np.sqrt(dfunction3_error[i])
     d2function3_error[i] = np.sqrt(d2function3_error[i])
-print('rounding error of the first order derivative:')
+print('error of the first order derivative: cubic function')
 print('method 1:',dfunction3_error[0])
 print('method 2:',dfunction3_error[1])
-print('rounding error of the second order derivative:')
+print('error of the second order derivative: cubic function')
 print('method 3:',d2function3_error[0])
 print('method 4:',d2function3_error[1])
 
@@ -215,19 +218,20 @@ for i in range(2, len(grid)-2):
 for i in range (0, 2):
     dfunction4_error[i] = np.sqrt(dfunction4_error[i])
     d2function4_error[i] = np.sqrt(d2function4_error[i])
-print('rounding error of the first order derivative:')
+print('error of the first order derivative: quartic function')
 print('method 1:',dfunction4_error[0])
 print('method 2:',dfunction4_error[1])
-print('rounding error of the second order derivative:')
+print('error of the second order derivative: quartic function')
 print('method 3:',d2function4_error[0])
 print('method 4:',d2function4_error[1])
                                    
 
 #question 3.2 investigate the properties of the truncation error
 
-print('numerical error of the first order derivative:')
+print('question 3.2')
+print('numerical error of the first order derivative: trigonometric function')
 print('method 1:',df_error[0])
 print('method 2:',df_error[1])
-print('numerical error of the second order derivative:')
+print('numerical error of the second order derivative: trigonometric function')
 print('method 3:',d2f_error[0])
 print('method 4:',d2f_error[1])
